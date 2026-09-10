@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Tetris Mobile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <!-- Cabeçalho com Informações -->
+        <div class="scoreboard">
+            <div>Pontos: <span id="score">0</span></div>
+            <div>Nível: <span id="level">1</span></div>
+        </div>
+
+        <!-- Área do Jogo -->
+        <div class="canvas-wrapper">
+            <canvas id="tetris" width="240" height="400"></canvas>
+            
+            <!-- Tela de Game Over / Início -->
+            <div id="menu" class="menu-overlay">
+                <h1 id="menu-title">TETRIS</h1>
+                <button id="start-btn">JOGAR</button>
+            </div>
+        </div>
+
+        <!-- Controles Touch para Celular -->
+        <div class="mobile-controls">
+            <div class="control-row">
+                <button id="btn-left" class="control-btn">◀</button>
+                <button id="btn-rotate" class="control-btn">🔄</button>
+                <button id="btn-right" class="control-btn">▶</button>
+            </div>
+            <div class="control-row">
+                <button id="btn-down" class="control-btn">▼</button>
+                <button id="btn-drop" class="control-btn">⏬</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
